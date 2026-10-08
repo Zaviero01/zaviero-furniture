@@ -1,0 +1,411 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f5f5f5;
+    color: #222;
+    padding: 0;
+}
+
+
+/* =========================
+   NAVIGATION
+========================= */
+
+.navbar {
+    background: #111;
+    padding: 15px 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+
+/* LOGO */
+
+.logo-box {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo-symbol {
+    width: 42px;
+    height: 42px;
+    border: 2px solid #d4af37;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #d4af37;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.logo-text {
+    text-align: left;
+}
+
+.logo {
+    color: #d4af37;
+    font-size: 20px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.logo-subtitle {
+    color: white;
+    font-size: 10px;
+    letter-spacing: 4px;
+    margin-top: 2px;
+}
+
+
+/* NAV LINKS */
+
+.nav-links {
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.nav-links a:hover {
+    color: #d4af37;
+}
+
+
+/* =========================
+   HERO
+========================= */
+
+.hero {
+    text-align: center;
+    padding: 70px 20px;
+    background: #111;
+    color: white;
+}
+
+.hero-logo {
+    width: 75px;
+    height: 75px;
+    border: 3px solid #d4af37;
+    border-radius: 50%;
+    margin: 0 auto 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #d4af37;
+    font-size: 45px;
+    font-weight: bold;
+}
+
+.hero h1 {
+    color: #d4af37;
+    font-size: 48px;
+    margin-bottom: 15px;
+}
+
+.hero p {
+    color: white;
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+
+
+/* EXPLORE BUTTON */
+
+.hero a.hero-btn {
+    display: inline-block;
+    background-color: #d4af37;
+    color: white;
+    padding: 15px 28px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.hero a.hero-btn:hover {
+    background-color: #b8941f;
+}
+
+
+/* =========================
+   FURNITURE
+========================= */
+
+.furniture-section {
+    max-width: 900px;
+    margin: auto;
+    padding: 20px;
+}
+
+h2 {
+    color: #333;
+    border-bottom: 2px solid #b8860b;
+    padding-bottom: 8px;
+}
+
+.furniture-card {
+    background: white;
+    padding: 20px;
+    margin: 30px 0;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+.furniture-card h3 {
+    color: #b8860b;
+    font-size: 26px;
+}
+
+.furniture-card p {
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+
+/* =========================
+   IMAGES
+========================= */
+
+img {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    border-radius: 12px;
+    display: block;
+    margin: 15px auto;
+}
+
+
+/* =========================
+   ORDER BUTTON
+========================= */
+
+.whatsapp-btn {
+    display: inline-block;
+    background: #d4af37;
+    color: white;
+    padding: 12px 22px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.whatsapp-btn:hover {
+    background: #b8941f;
+}
+
+
+/* =========================
+   ABOUT
+========================= */
+
+.about {
+    background: white;
+    padding: 50px 20px;
+    margin-top: 40px;
+    text-align: center;
+}
+
+.about h2 {
+    color: #b8860b;
+    border-bottom: none;
+}
+
+.about p {
+    max-width: 700px;
+    margin: auto;
+    font-size: 18px;
+    line-height: 1.7;
+}
+
+
+/* =========================
+   CONTACT
+========================= */
+
+.contact {
+    text-align: center;
+    background: #111;
+    color: white;
+    padding: 50px 20px;
+    margin-top: 40px;
+}
+
+.contact h2 {
+    color: #d4af37;
+    border-bottom: none;
+}
+
+.contact p {
+    font-size: 18px;
+}
+
+
+/* =========================
+   FOOTER
+========================= */
+
+.footer {
+    background: #111;
+    color: white;
+    text-align: center;
+    padding: 50px 20px;
+    margin-top: 40px;
+    border-top: 2px solid #d4af37;
+}
+
+.footer h2 {
+    color: #d4af37;
+    border-bottom: none;
+    margin-bottom: 15px;
+}
+
+.footer p {
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+.footer .whatsapp-btn {
+    margin-top: 15px;
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 700px) {
+
+    .navbar {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .nav-links {
+        gap: 12px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .nav-links a {
+        font-size: 13px;
+    }
+
+    .hero h1 {
+        font-size: 36px;
+    }
+
+    .hero p {
+        font-size: 18px;
+    }
+
+    .logo {
+        font-size: 18px;
+    }
+
+    .footer {
+        padding: 40px 15px;
+    }
+
+}/* =========================
+OUR SERVICES
+========================= */
+
+.services {
+padding: 70px 20px;
+text-align: center;
+background: #0b0b0b;
+border-top: 2px solid #d4af37;
+}
+
+.services h2 {
+color: #d4af37;
+font-size: 30px;
+margin-bottom: 15px;
+}
+
+.services-intro {
+max-width: 700px;
+margin: 0 auto 40px;
+color: #dddddd;
+}
+
+.service-card {
+display: inline-block;
+vertical-align: top;
+width: 30%;
+min-height: 230px;
+margin: 10px;
+padding: 25px 20px;
+background: #1b1b1b;
+border: 1px solid #d4af37;
+border-radius: 12px;
+}
+
+.service-icon {
+width: 55px;
+height: 55px;
+margin: 0 auto 15px;
+border: 2px solid #d4af37;
+border-radius: 50%;
+display: flex;
+align-items: center;
+justify-content: center;
+color: #d4af37;
+font-size: 23px;
+}
+
+.service-card h3 {
+color: #d4af37;
+margin-bottom: 12px;
+}
+
+.service-card p {
+color: #cccccc;
+font-size: 14px;
+}
+
+.service-card:hover {
+transform: translateY(-6px);
+transition: 0.3s;
+border-color: #ffffff;
+}
+
+.services-btn {
+display: inline-block;
+margin-top: 30px;
+padding: 14px 25px;
+background: #d4af37;
+color: #000000;
+text-decoration: none;
+font-weight: bold;
+border-radius: 6px;
+}
+
+.services-btn:hover {
+background: #ffffff;
+}
+
+/* SERVICES ON PHONE */
+
+@media (max-width: 600px) {
+
+.service-card {
+    display: block;
+    width: 100%;
+    max-width: 420px;
+    margin: 20px auto;
+}
+
+}
